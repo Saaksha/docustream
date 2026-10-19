@@ -162,6 +162,7 @@ SSE allows the API to deliver generated answer tokens incrementally over an HTTP
 * Scanned PDFs without extractable text require OCR, which is not implemented.
 * The embedding model requires an initial download unless it is already cached.
 * The service does not currently include authentication, user-specific document access, or persistent vector storage.
+* Duplicate uploads: Identical PDFs are accepted as separate documents. Each upload receives a new document ID; the service does not currently detect or deduplicate identical files.
 
 ## Future Improvements
 
